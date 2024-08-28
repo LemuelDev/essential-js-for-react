@@ -1,0 +1,167 @@
+git git config --global user.name "lemuel_dev"
+git config --global user.email "lemueldev3@gmail.com"
+// use to configure the name and email of the person who initialize, upload, and commit changes into our code..
+
+git config --global init.default branch main
+// use to initialize the main default branch of our code which is the main.
+
+git config -h
+// use to view all other commands available in git..
+
+
+// locating the folder of your codes..
+ex is: (desktop/practice-git)
+
+cd Desktop
+cd practice-git
+
+//initialize it
+git init
+git status (check the status of the folder if all the files are tracked.)
+
+// adding a file 
+git add . (adding all the files)
+git add index.html(sample file)
+
+// unstage or unadd the file
+git rm --cached index.html
+
+// if made a changes in the file
+git restore index.html (to restore the old one)
+git add index.html (to add the changes to the file)
+
+git_ignore is a file that have the list of files in the folder that needs to be ignored.
+// to add the gitignore file
+touch .gitignore
+
+// usually in the gitignore files because they cant be expose in the git repo.
+// important step to hide all the key datas and other files
+-node modules
+- environment variables
+- important files
+
+// after putting the index.html in the .gitignore
+git status
+git rm --cached index.html // to remove on the tracked files
+// it automatically ignore the file even if it is untrack
+git status // to check and finalize it.
+
+
+
+//git commit
+
+// adding a message when a file is commited
+git commit -m "Added inital files"
+
+after commiting, next step is how other developers track your code?
+// github repository..
+
+
+
+git brachessss..
+
+// create a branch
+git branch example
+
+//check list
+git branch --list
+
+// go to specific branch
+git checkout example
+git checkout main // go to main branch
+
+//delete branch
+git branch -d example
+
+// branches are use usually when working in a feature, bug fixing, and for faster development..
+
+// short cut key
+git checkout -b example
+
+// command that keep updates of the said branch with the main one.
+// synching changes from main to feature..
+
+//while on the example branch,,
+git pull origin main
+// merging from main to branches (feature)
+
+//to avoid username and pass when commiting changes..
+git config --global credential.helper wincred
+
+//git merge
+
+//creating a branch with a base/value
+git checkout -b sample origin/main (main is the base value)
+//merging with branches...
+
+// save some changes
+git add .
+
+then commit
+git commit -m 'changed successfully'
+
+git push origin hotfix.. 
+
+switch to main branch/ other branch to merge
+git checkkout main
+git merge -m "merge successfully" hotfix.
+
+push that changes on to the repository
+
+git push origin main..
+
+
+
+//resolving merge conflicts...
+
+if you are editing in a branch one.
+save the changes first.
+git status
+git add .
+git commit 
+git push origin feature
+
+switch to main..
+git checkout main
+git pull origin main (pull the branch edited/ changed)
+git merge // problem is merging a single file simultaneously..
+
+open the file and select you want to change.
+ctrl + s..
+
+git status
+git add . / git merge --abort (abort the merge)
+git commit
+git push origin main
+
+
+
+// git cloning..
+
+copy the url from the github..
+
+cd Desktop
+git clone https.../git-practice.git
+cd git-practice
+...doneeee
+// initialize already..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+// React Outlineee 
+
+be comfortable in JS
+modern js is the new syntax of react (es6+)
+arrow functionss..
+spread operator..
+destructuring
+promises...
+fetch api...
+async/await..
+
+-understand what react is.
+-learn basic concepts(components, props, jsx..)
+-useState
+-learning routes
+-build websites using api
+-state management
+-learn react hooks
+-learn best practices
+-get a job to further improve...
+
+
